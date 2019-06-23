@@ -24,18 +24,18 @@ LIB_DEPENDS=	libpopt.so:devel/popt \
 		libsasl2.so:security/cyrus-sasl2 \
 		libinotify.so:devel/libinotify \
 		libplds4.so:devel/nspr
-BUILD_DEPENDS=	talloc1>0:devel/talloc \
-		tevent1>0:devel/tevent \
-		tdb1>0:databases/tdb \
+BUILD_DEPENDS=	talloc:devel/talloc \
+		tevent:devel/tevent \
+		tdb:databases/tdb \
 		xmlcatalog:textproc/libxml2 \
 		docbook-xsl>=1:textproc/docbook-xsl \
 		xsltproc:textproc/libxslt \
 		xmlcatmgr:textproc/xmlcatmgr \
 		krb5>=1.10:security/krb5 \
 		nsupdate:dns/bind-tools
-RUN_DEPENDS=	talloc1>0:devel/talloc \
-		tevent1>0:devel/tevent \
-		tdb1>0:databases/tdb
+RUN_DEPENDS=	talloc:devel/talloc \
+		tevent:devel/tevent \
+		tdb:databases/tdb
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-selinux=no --with-semanage=no \
